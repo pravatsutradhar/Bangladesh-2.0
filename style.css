@@ -99,3 +99,277 @@ a.nav-btn {
 }
 
 /* Header CSS End  */
+
+
+/* Banner Css Start  */
+
+
+.flex-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 80px 60px;
+	border-radius: 24px;
+	background: #C6E4D6;
+}
+
+.banner-content {
+	flex: 1 1 622px;
+}
+
+.banner-content h4 {
+	color: rgba(14, 14, 14, 50%);
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+.banner-content h2 {
+	color: var(--black);
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.banner-btn {
+	padding: 17px 34px;
+	display: inline-block;
+	background: var(--btn);
+	color: #fff;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+.banner-img {
+	flex: 1 1 474px;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+
+/* Responsive Code */
+
+/* For wider screens (1024px and above) */
+@media screen and (max-width: 1024px) {
+   
+	.flex-banner {
+		padding: 100px;
+        flex-direction: column-reverse;
+	}
+
+    .banner-content {
+		flex: 1 1 auto;
+	}
+
+	.banner-content {
+		margin-top: 50px; 
+	}
+	.banner-content h4 {
+		font-size: 28px; 
+	}
+
+	.banner-content h2 {
+		font-size: 64px; 
+	}
+
+	.banner-btn {
+		font-size: 20px; 
+		padding: 20px 40px;
+	}
+
+	.banner-img {
+		flex: 0 0 auto; 
+	}
+}
+
+
+/* For tablets and smaller devices */
+@media screen and (max-width: 768px) {
+	.flex-banner {
+		flex-direction: column-reverse;
+		text-align: center;
+		padding: 40px 20px;
+	}
+
+	.banner-content {
+		flex: 1 1 auto;
+	}
+
+	.banner-content h4 {
+		font-size: 20px;
+	}
+
+	.banner-content h2 {
+		font-size: 36px;
+	}
+
+	.banner-btn {
+		font-size: 16px;
+		padding: 12px 24px;
+	}
+
+	.banner-img {
+		flex: 1 1 auto;
+	}
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+	.flex-banner {
+		padding: 30px 15px;
+	}
+
+	.banner-content h4 {
+		font-size: 18px;
+	}
+
+	.banner-content h2 {
+		font-size: 28px;
+	}
+
+	.banner-btn {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	
+}
+
+/* Banner End  */
+
+/* Four Column Section Start  */
+
+.section-title {
+	font-size: 40px;
+	margin-bottom: 32px;
+	color: var(--black);
+	font-weight: 700;
+}
+  
+  /* Four Column Section */
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex: 0 1 calc(25% - 20px);
+    background: #fff;
+    border: 1px solid  rgba(14, 14, 14, 15%);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    transition: transform 0.3s;
+  }
+  
+  .column:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+  
+.icon-box h3 {
+	font-size: 20px;
+	margin-bottom: 12px;
+	color: var(--black);
+	font-weight: 700;
+}
+  
+.icon-box p {
+	color: rgba(14, 14, 14, 70%);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+  /* Responsive Adjustments */
+  
+  /* For Tablets */
+  @media screen and (max-width: 1024px) {
+    .column {
+      flex: 0 1 calc(50% - 20px); 
+    }
+  
+    .section-title {
+      font-size: 30px;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media screen and (max-width: 480px) {
+    .column {
+      flex: 0 1 100%; 
+    }
+  
+    .section-title {
+      font-size: 24px;
+    }
+  
+    .icon {
+      font-size: 30px;
+    }
+  }
+
+
+  /* Future Three Column Section  */
+
+  p.section-para {
+    margin-bottom: 32px;
+    color: rgba(14, 14, 14, 70%);
+    line-height: 24px;
+}
+
+.flex-three-column {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.three-column {
+  flex: 0 1 calc(33% - 20px);
+  background: #fff;
+  border: 1px solid  rgba(14, 14, 14, 15%);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  transition: transform 0.3s;
+}
+
+.three-column.icon-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.dbg-btn {
+	display: inline-block;
+	padding: 11px 20px;
+	color: white;
+	background: #5490F5;
+	margin-top: 20px;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+a.green-bg.dbg-btn {
+  background-color: #09A15C;
+}
+
+a.yellow-bg.dbg-btn {
+  background-color: #FFC239;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-three-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
