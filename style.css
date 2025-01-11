@@ -27,9 +27,17 @@ a {
     margin: auto;
 }
 
+.pb-80{
+  padding-bottom: 80px;
+}
+
 @media screen and (max-width: 1270px) {
     .container {
         padding: 0 20px;
+    }
+
+    .pb-80{
+      padding-bottom: 50px;
     }
 }
 
@@ -328,6 +336,7 @@ a.nav-btn {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .three-column {
@@ -371,5 +380,227 @@ a.yellow-bg.dbg-btn {
   .flex-three-column {
     display: flex;
     flex-direction: column;
+  }
+}
+
+
+/* Quote Start  */
+
+.quote-wrapper {
+  padding: 48px 24px;
+  border: 1px solid rgba(14,14,14, 15%);
+  border-radius: 16px;
+  position: relative;
+}
+
+.quote-icon {
+	position: absolute;
+	top: 25px;
+	left: 24px;
+}
+
+.quote-para {
+	color: rgba(14, 14, 14, 80%);
+	margin-bottom: 12px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h2.quote-name {
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(14,14,14, 80%);
+}
+
+h4.role {
+  font-size: 16px;
+  color: rgba(14,14,14, 60%);
+  line-height: 24px;
+}
+
+
+/* Openion Start  */
+.openion-table {
+  padding: 32px;
+  /* border: 1px solid rgba(14,14, 14, 15%); */
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+
+
+.openion-title h2 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 24px;
+	color: var(--black);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 36px 24px;
+}
+
+.table-head th {
+	padding: 24px;
+	background-color: #C6E4D6;
+}
+
+
+
+/* Resent Post CSS  */
+
+
+
+/*recent news style*/
+.recent-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0E0E0E;
+  margin-bottom: 24px;
+}
+.recent-des {
+  font-size: 16px;
+  color: #0E0E0E;
+  margin-bottom: 32px;
+
+}
+
+
+
+.recent-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 48px;
+	gap: 32px;
+	background-color: #fff;
+	border-radius: 24px;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.recent-photo img {
+  border-radius: 24px;
+  margin-bottom: 12px;
+}
+.recent-item-text img {
+  margin-bottom: 12px;
+}
+
+.time {
+  color: rgba(14, 14, 14, 70%);
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+.recent-satelite {
+  color: rgba(14, 14, 14, 70%);
+  font-size: 16px;
+  margin-bottom: 32px;
+
+}
+
+.recent-text-title {
+	font-size: 32px;
+	font-weight: 700;
+	color: rgba(14, 14, 14, 80%);
+	margin-bottom: 12px;
+}
+
+.btn-primary {
+	background-color: var(--btn);
+	color: #fff;
+	padding: 13px 26px;
+	display: inline-block;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .recent-item {
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+  }
+
+  .recent-title {
+    font-size: 36px;
+  }
+
+  .recent-text-title {
+    font-size: 28px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .recent-des {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .recent-item {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .recent-photo img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .recent-text-title {
+    font-size: 24px;
+  }
+
+  .time,
+  .recent-satelite {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recent-title {
+    font-size: 28px;
+  }
+
+  .recent-item {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .recent-text-title {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
