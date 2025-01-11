@@ -12,8 +12,8 @@
     font-family: "Fira Sans", serif;
 }
 
-body {
-    background: #F1F1F3;
+body{
+  background: #F1F1F3;
 }
 
 a {
@@ -627,21 +627,24 @@ td, th {
 	line-height: 24px;
 }
 .donate-card {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 1071px;
-	margin: auto auto 32px auto;
-	gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1071px;
+  margin: auto auto 32px auto;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .donate-card .card {
-	padding: 40px;
-	border: 1px solid rgba(14,14,14, 15%);
-	border-radius: 16px;
-	background-color: #fff;
-	flex: 1 1 auto;
+  padding: 40px;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background-color: #fff;
+  flex: 1 1 calc(25% - 20px);
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .donate-card-text{
@@ -680,6 +683,80 @@ td, th {
 
 .donate-btn .btn-primary {
   border: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .donate-title {
+    font-size: 36px;
+  }
+
+  .donate-des {
+    font-size: 14px;
+  }
+
+  .donate-card .card {
+    flex: 1 1 calc(50% - 24px); /* Two cards per row */
+    padding: 32px;
+  }
+
+  .donate-card-text {
+    font-size: 32px;
+  }
+
+  .donate-input input {
+    font-size: 20px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-title {
+    font-size: 32px;
+  }
+
+  .donate-card {
+    gap: 16px;
+  }
+
+  .donate-card .card {
+    flex: 1 1 100%; /* One card per row */
+    padding: 24px;
+  }
+
+  .donate-card-text {
+    font-size: 28px;
+  }
+
+  .donate-input input {
+    font-size: 18px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-title {
+    font-size: 28px;
+  }
+
+  .donate-des {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+
+  .donate-card .card {
+    padding: 20px;
+  }
+
+  .donate-card-text {
+    font-size: 24px;
+  }
+
+  .donate-input input {
+    font-size: 16px;
+    padding: 14px;
+  }
 }
 
 
@@ -807,3 +884,32 @@ td, th {
 
 
 /* Subscribe Section End  */
+
+
+/* Footer Start  */
+
+/*footer section style*/
+#footer {
+	background-color: #fff;
+}
+
+.footer-content {
+	text-align: center;
+	padding: 50px 0;
+
+}
+.footer-content h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #0E0E0E;
+	padding-bottom: 32px;
+	border-bottom: 1px solid rgba(14,14,14,10%);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 23px;
+}
